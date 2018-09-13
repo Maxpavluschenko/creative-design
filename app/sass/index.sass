@@ -1,0 +1,83 @@
+@import "../fonts/HelveticaNeue.ttf"
+@import "../fonts/LatoRegular.ttf"
+$bg-nav: #333333
+$color-hover-link: #6abb95
+$nav-link: #adadad
+$border-bottom: #f0f0f0
+
+body 
+	margin: 0
+	padding: 0
+h1 
+	padding: 43px 0 30px 0
+	text-transform: uppercase
+	text-align: left
+	font-size: 25px
+	color: #141414
+	font-weight: bold
+	font-family: HelveticaNeue
+main
+	font-family: HelveticaNeue
+.container-fluid
+	padding-right: 0
+	padding-left: 0
+	.navbar
+		background-color: $bg-nav
+		padding: 0
+		align-items: stretch
+		.navbar-brand
+			padding: 15px 0 15px 13px
+	.navbar-collapse
+		justify-content: flex-end
+		.navbar-nav
+			height: 100%
+		.nav-item
+			a 
+				color: #adadad
+				font-size: 16px
+				text-transform: capitalize
+			.nav-link
+				padding: 0 13px
+				height: 100%
+				display: flex
+				align-items: center
+				&:hover
+					background-color: $color-hover-link
+					color: #fff
+				&:focus
+					color: #fff
+					background-color: $color-hover-link
+		.nav-button
+			text-decoration: none	
+			color: $nav-link
+			font-size: 16px
+			border: 1px solid #fff
+			border-radius: 4px
+			padding: 2px 15px
+			margin-right: 5px
+			&:hover
+				color: #fff
+.navigation
+	font-family: HelveticaNeue
+	border-bottom: 1px solid $border-bottom
+	.nav
+		padding: 22px 0
+	a 
+		color: #141414
+		padding: 0 10px	
+		font-size: 14px
+		&:hover
+			color: $color-hover-link
+		&:focus
+			color: $color-hover-link
+.header-content
+	font-family: LatoRegular
+	display: flex
+	li 
+		padding-left: 9px
+		font-size: 16px
+		color: #141414
+	p 
+		font-size: 16px
+		color: #494949
+	
