@@ -1,0 +1,235 @@
+@font-face {
+  font-family: HelveticaNeue;
+  src: url("../fonts/HelveticaNeue.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: LatoRegular;
+  src: url("../fonts/LatoRegular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+body {
+  margin: 0;
+  padding: 0; }
+
+h1 {
+  padding: 43px 0 30px 0;
+  text-transform: uppercase;
+  text-align: left;
+  font-size: 25px;
+  color: #141414;
+  font-weight: bold;
+  font-family: HelveticaNeue; }
+
+main {
+  font-family: HelveticaNeue; }
+
+.container-fluid {
+  padding-right: 0;
+  padding-left: 0; }
+  .container-fluid .navbar {
+    background-color: #333333;
+    padding: 0;
+    -webkit-box-align: stretch;
+    -webkit-align-items: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch; }
+    .container-fluid .navbar .navbar-brand {
+      padding: 15px 0 15px 13px; }
+    .container-fluid .navbar .navbar-toggler {
+      color: #fff;
+      border-color: #fff; }
+  .container-fluid .navbar-collapse {
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+            justify-content: flex-end; }
+    .container-fluid .navbar-collapse .navbar-nav {
+      height: 100%;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      .container-fluid .navbar-collapse .navbar-nav .active > .nav-link {
+        background-color: #6abb95;
+        color: #fff; }
+    .container-fluid .navbar-collapse .nav-item {
+      height: 100%; }
+      .container-fluid .navbar-collapse .nav-item a {
+        color: #adadad;
+        font-size: 16px;
+        text-transform: capitalize; }
+      .container-fluid .navbar-collapse .nav-item .nav-link {
+        padding: 0 13px;
+        height: 100%;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center; }
+        .container-fluid .navbar-collapse .nav-item .nav-link:hover {
+          background-color: #6abb95;
+          color: #fff; }
+        .container-fluid .navbar-collapse .nav-item .nav-link:focus {
+          color: #fff;
+          background-color: #6abb95; }
+    .container-fluid .navbar-collapse .nav-button {
+      text-decoration: none;
+      color: #adadad;
+      font-size: 16px;
+      border: 1px solid #fff;
+      -webkit-border-radius: 4px;
+              border-radius: 4px;
+      padding: 2px 15px;
+      margin-right: 15px;
+      margin-left: 15px;
+      height: 45%; }
+      .container-fluid .navbar-collapse .nav-button:hover {
+        color: #fff; }
+
+.navigation {
+  font-family: HelveticaNeue;
+  border-bottom: 1px solid #f0f0f0; }
+  .navigation .nav {
+    padding: 22px 0; }
+  .navigation a {
+    color: #141414;
+    padding: 0 10px;
+    font-size: 14px; }
+    .navigation a:hover {
+      color: #6abb95; }
+    .navigation a:focus {
+      color: #6abb95; }
+
+.header-content {
+  font-family: LatoRegular;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 30px; }
+  .header-content li {
+    padding-left: 9px;
+    font-size: 16px;
+    color: #141414; }
+  .header-content p {
+    font-size: 16px;
+    color: #494949; }
+
+.clients .clients-content {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.clients .client-item {
+  margin-bottom: 25px;
+  cursor: pointer; }
+  .clients .client-item .img-fluid:hover {
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1); }
+
+.studies-item {
+  position: relative;
+  height: 390px;
+  z-index: 5;
+  overflow: hidden;
+  display: block;
+  -webkit-align-self: auto;
+      -ms-flex-item-align: auto;
+          align-self: auto;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 0 50%;
+      -ms-flex: 1 0 50%;
+          flex: 1 0 50%; }
+  .studies-item:hover > img {
+    opacity: 0.4;
+    -webkit-transform: translate(-50%, -50%) scale(1.1);
+        -ms-transform: translate(-50%, -50%) scale(1.1);
+            transform: translate(-50%, -50%) scale(1.1); }
+  .studies-item > img {
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    opacity: 0;
+    -webkit-transition: all .9s ease;
+    -o-transition: all .9s ease;
+    transition: all .9s ease; }
+  .studies-item .studies-info {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+    z-index: 10;
+    text-align: center; }
+    .studies-item .studies-info .studies-logo {
+      height: 50px; }
+      .studies-item .studies-info .studies-logo img {
+        height: 100%; }
+    .studies-item .studies-info p {
+      color: #ffffff;
+      font-size: 16px;
+      margin-top: 25px; }
+
+@media screen and (max-width: 960px) {
+  .clients .client-item {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; } }
+
+@media screen and (max-width: 768px) {
+  .navbar-toggler {
+    height: 48px;
+    margin-top: 9px;
+    margin-right: 15px; }
+  .nav-item,
+  .nav-btn {
+    margin-bottom: 8px; }
+  .header-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .header-content .content-list {
+      max-width: 100%; }
+    .header-content .content-text {
+      max-width: 100%; }
+  .studies {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; } }
+
+@media screen and (max-width: 576px) {
+  .navigation ul {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .clients .clients-content:last-child {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; } }
