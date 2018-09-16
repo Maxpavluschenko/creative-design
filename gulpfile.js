@@ -69,6 +69,8 @@ gulp.task('build', ['clean', 'sass', 'scripts'], function() {
 
 	const buildHtml = gulp.src('app/*.html') // Переносимо HTML в продакшен
 	.pipe(gulp.dest('dist'));
+	const buildImg = gulp.src('app/img/**/*') // Переносимо img в продакшен
+	.pipe(gulp.dest('dist/img'));
 
 });
 
